@@ -13,6 +13,8 @@ app.get('/', function(request, response) {
 
 app.post('/parse/', function(request, response) {
 	console.log(request.body);
+	var res = {"error":false,"emailParsed":""};
+	response.send(res);
 });
 
 app.listen(app.get('port'), function() {
