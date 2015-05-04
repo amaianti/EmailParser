@@ -1,0 +1,2 @@
+# Procfile.dev
+web: supervisor index.js
